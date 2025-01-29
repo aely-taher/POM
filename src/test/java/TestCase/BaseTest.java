@@ -42,7 +42,6 @@ public class BaseTest {
             driver.findElement(By.xpath("//a[@title='My Account']")).click();
             driver.findElement(By.xpath("//a[text()='Login']")).click();
 
-
         //login
         login.email().sendKeys("aelytaher@gmail.com");
         login.password().sendKeys("aely1234");

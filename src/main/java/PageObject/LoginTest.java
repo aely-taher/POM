@@ -8,6 +8,7 @@ public class LoginTest {
  private WebDriver driver;
     public LoginTest(WebDriver driver){
         this.driver = driver;
+
     }
 
     public WebElement email(){

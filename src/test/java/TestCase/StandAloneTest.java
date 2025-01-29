@@ -42,6 +42,7 @@ public void testStand() {
             driver.findElement(By.xpath("//a[@title='My Account']")).click();
             driver.findElement(By.xpath("//a[text()='Login']")).click();
             //Login Credentials
+
             driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("aelytaher@gmail.com");
             driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("aely1234");
             driver.findElement(By.xpath("//input[@value='Login']")).click();

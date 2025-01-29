@@ -11,5 +11,6 @@ public class TestDemo extends BaseTest {
     @Test
     public void login() {
         editPage.editPage().click();
+
     }
  }

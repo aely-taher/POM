@@ -12,6 +12,5 @@ public class EditPage {
 public WebElement editPage(){
     return driver.findElement(By.xpath("//a[text()='Edit your account information']"));
 
-}
 
 }
