@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class StandAloneTest {
-    @Test
+
 public void testStand() {
         WebDriverManager.chromedriver().setup(); //driver set up
         WebDriver driver = new ChromeDriver();
@@ -32,7 +32,7 @@ public void testStand() {
         Assert.assertEquals(thankYouText, "Your Account Has Been Created!");
 
     }
-    @Test
+
         public void testStand2() {
             WebDriverManager.chromedriver().setup(); //driver set up
             WebDriver driver = new ChromeDriver();

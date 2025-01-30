@@ -1,14 +1,14 @@
 package PageObject;
 
+import AbstractComponent.AbstractComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginTest {
- private WebDriver driver;
-    public LoginTest(WebDriver driver){
-        this.driver = driver;
+public class LoginTest extends AbstractComponent {
 
+    public LoginTest(WebDriver driver){
+           super(driver);
     }
 
     public WebElement email(){
@@ -21,4 +21,5 @@ public class LoginTest {
     public WebElement loginbutton(){
         return driver.findElement(By.xpath("//input[@value='Login']"));
     }
+
 }
