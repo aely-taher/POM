@@ -1,5 +1,5 @@
 package TestCase;
-
+import AbstractComponent.ExcelReader;
 import AbstractComponent.AbstractComponent;
 import PageObject.EditPage;
 import PageObject.LoginTest;
@@ -29,6 +29,7 @@ public class BaseTest {
     public AbstractComponent abstractComponent;
     public RegisterForm registerForm;
     public ThankYou thankYou;
+    public ExcelReader excelReader;
 
 
     private String browser;
@@ -73,6 +74,7 @@ public class BaseTest {
             editPage = new EditPage(driver);
             abstractComponent = new AbstractComponent(driver);
             thankYou = new ThankYou(driver);
+            excelReader = new ExcelReader();  // Correct way
             driver.get(url); //get url
             driver.manage().window().maximize();
             driver.findElement(By.xpath("//a[@title='My Account']")).click();
